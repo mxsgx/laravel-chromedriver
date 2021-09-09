@@ -1,0 +1,43 @@
+{
+    "name": "masga/laravel-chromedriver",
+    "description": "Control Chrome or Chromium easily.",
+    "type": "library",
+    "keywords": ["laravel", "webdriver", "chromedriver"],
+    "support": {
+        "issues": "https://github.com/mxsgx/laravel-chromedriver/issues",
+        "source": "https://github.com/mxsgx/laravel-chromedriver"
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "php-webdriver/webdriver": "^1.11",
+        "illuminate/contracts": "^8.0",
+        "illuminate/http": "^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Masga\\ChromeDriver\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mxsgx",
+            "email": "mxsgx.id@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Masga\\ChromeDriver\\ChromeDriverServiceProvider"
+            ],
+            "aliases": {
+                "Browser": "Masga\\ChromeDriver\\Facades\\Browser"
+            }
+        }
+    }
+}
